@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="6" time="55.408">
+    <testcase classname="Login functionality" name="login with valid inputs" time="13.676">
+        <system-out><![CDATA[Given user nevigate to application url......................................passed
+When user enters the valid emailid komalr.dhale@gmail.com...................passed
+And user enters the valid password 123456...................................passed
+And user click on login button..............................................passed
+Then user should login successfully.........................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Login functionality" name="login with valid inputs 2" time="6.352">
+        <system-out><![CDATA[Given user nevigate to application url......................................passed
+When user enters the valid emailid sachin1@gmail.com........................passed
+And user enters the valid password 234567...................................passed
+And user click on login button..............................................passed
+Then user should login successfully.........................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Login functionality" name="login with invalid password and valid email" time="10.026">
+        <system-out><![CDATA[Given user nevigate to application url......................................passed
+When user enters the valid emailid "komalr.dhale@gmail.com".................passed
+And user enters the invalid password "1234567"..............................passed
+And user click on login button..............................................passed
+Then user should get proper warning massage.................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Login functionality" name="login with invalid email and valid password" time="10.019">
+        <system-out><![CDATA[Given user nevigate to application url......................................passed
+When user enters the invalid emailid "komal.dhale12@gmail.com"..............passed
+And user enters the valid password "123456".................................passed
+And user click on login button..............................................passed
+Then user should get proper warning massage.................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Login functionality" name="login with invalid email and invalid password" time="6.796">
+        <system-out><![CDATA[Given user nevigate to application url......................................passed
+When user enters the invalid emailid "komal.dhale12@gmail.com"..............passed
+And user enters the invalid password "1234567"..............................passed
+And user click on login button..............................................passed
+Then user should get proper warning massage.................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Login functionality" name="login with empty email and empty password" time="8.06">
+        <system-out><![CDATA[Given user nevigate to application url......................................passed
+When user enters the empty emailid " "......................................passed
+And user enters the empty password " "......................................passed
+And user click on login button..............................................passed
+Then user should get proper warning massage.................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
